@@ -24,6 +24,7 @@ status do_EDIT_opration(edit *mp3edit,int argc,char *argv[])
 {
   
     edit_vaild_fname(argc,argv,mp3edit->mp3edit_fptr,mp3edit);
+    
     open_for_file(mp3edit->mp3edit_fptr,mp3edit);
     open_duplicate_file(mp3edit->duplicate_fname,mp3edit->duplicate_mp3_ptr,mp3edit);
     For_Edit_nametag(argc,argv,mp3edit->mp3edit_fptr,mp3edit);
